@@ -7,24 +7,40 @@
         <link rel="stylesheet" href="/normalize.css" type="text/css">
         <link rel="stylesheet" href="/style.css" type="text/css">
     </head>
-    <body>
-        <header class="white-bg padding">
+    <body onload="fetchBookmarks()">
+        <header class="white-bg">
             <h1 class="text-center">
-                Flex Grid!
+                Bookmarker
             </h1>
         </header>
         <main>
             <section>
-                <article class="threequarter padding">
-                    <p>Three quarter width</p>
+                <article id="central-element" class="column">
+                    <h3 class="text-center">Bookmark Your Favourite Sites!</h3>
+                    <form id="myForm" class="text-center">
+                        <div class="form-group">
+                            <h6><label>Site name :</label></h6>
+                            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+                        </div>
+                        <div class="form-group">
+                            <h6><label>Site URL :</label></h6>
+                            <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+                        </div>
+                        <button type="submit" class="button"><h6>Submit</h6></button>
+                    </form>
                 </article>
-                <aside class="quarter padding white-bg">
-                    <p>One quarter width</p>
-                </aside>
+            </section>
+            <section>
+                <article id="storedBookmarks" class="column">
+                    <h3>Stored Bookmarks:</h3>
+                    <div id="bookmarksResults">
+                    </div>
+                </article>
             </section>
         </main>
         <footer class="white-bg padding">
             <p class="text-center">footer</p>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>

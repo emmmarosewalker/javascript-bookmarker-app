@@ -1,2 +1,2 @@
-# mybasicframework
-A basic responsive flex grid and some styles, intended to be more lightweight than bootstrap for my own personal projects.
+# javascript bookmarker app
+Basic app using vanilla javascript

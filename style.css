@@ -10,7 +10,7 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     color: #111;
-    background: #fafafa;
+    background: #d1fff1;
 }
 
 .padding {
@@ -21,12 +21,8 @@ main {
     vertical-align: middle;
 }
 
-@media screen and (min-width: 800px){
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+header h1{
+    padding: 30px 0px;
 }
 
 /* Font Stuff */
@@ -36,17 +32,24 @@ h1 {
 }
 h2{
     font-size: 1.7rem;
+    margin: 0.8rem 0;
 }
 h3{
     font-size: 1.5rem;
+    margin: 0.8rem 0;
 }
 h4{
     font-size: 1.3rem;
+    margin-bottom: 0.8rem;
 }
 h5, h6{
     text-transform: uppercase;
     font-size: 0.8rem;
+    font-weight: 500;
+    color: #555;
+    margin: 0.3rem 0;
 }
+
 .text-center{
     text-align: center;
 }
@@ -97,3 +100,100 @@ h5, h6{
         flex: 7.5;
     }
 }
+
+/* Grid */
+
+#central-element{
+    margin: 30px 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+#storedBookmarks{
+    margin: 0 150px 30px 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.form-control{
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-transform: lowercase;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    border: 2px solid #d1fff1;
+    text-align: center;
+    color: #666;
+    width: 30%;
+}
+
+#myForm > .button{
+    margin-top: 5px;
+    background-color: #d1fff1;
+    color: #666;
+    border-radius: 3px;
+    border: 2px solid #d1fff1;
+    width: 20%;
+    font-size: 0.7rem;
+}
+
+#myForm > .button:hover{
+    background-color: #a8dbcb;
+    color: #d1fff1;
+    border: 2px solid #a8dbcb;
+    width: 20%;
+    font-size: 0.7rem;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #d1fff1;
+    box-shadow: 0 0 15px #d1fff1;
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #d1fff1;
+    box-shadow: 0 0 15px #d1fff1
+}
+
+#bookmarksResults a{
+    background-color: #fff;
+    padding: 10px 10%;
+    margin-right:10px;
+    color: #222;
+    border-radius: 3px;
+    border: 2px solid #d1fff1;
+    text-decoration: none;
+}
+
+#bookmarksResults a:hover{
+    background-color: #d1fff1;
+    color: #222;
+    border: 2px solid #d1fff1;
+}
+
+a#btn-delete{
+    background-color: #fff;
+    color: red;
+    border: 2px solid red;
+}
+
+a#btn-delete:hover{
+    background-color: red;
+    color: #222;
+    border: 2px solid red;
+
+}
+
+
+
+
+
+
+
+
+
+
