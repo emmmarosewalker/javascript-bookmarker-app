@@ -85,7 +85,7 @@ function fetchBookmarks(){
 
         bookmarksResults.innerHTML += '<h4>' +
             name+'</h4>'
-            +'<a class"btn" target ="_blank" href="'+url+'">'+'visit</a>'
+            +'<div class="stored-buttons"><a class"btn" target ="_blank" href="'+url+'">'+'visit</a>'
             +'<a id="btn-delete" onclick="deleteBookmark(\''+url+'\')" href="#">delete</a>'
         ;
     }

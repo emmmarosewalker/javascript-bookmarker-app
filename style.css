@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    color: #111;
+    color: #222;
     background: #d1fff1;
 }
 
@@ -63,6 +63,27 @@ h5, h6{
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: #a8dbcb;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
+a:hover {
+    color: #222;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
 /* Backgrounds*/
 
 .white-bg{
@@ -99,52 +120,91 @@ h5, h6{
     .threequarter{
         flex: 7.5;
     }
+    .third{
+        flex: 3.333333333;
+    }
+    .fifteenth{
+        flex: 1.5;
+    }
+    .forty{
+        flex: 4;
+    }
 }
 
-/* Grid */
+.margin-bottom{
+    margin-bottom: 2em;
+}
+
+.block-element{
+    display: block;
+}
+
+/* Bookmarker app */
 
 #central-element{
-    margin: 30px 150px;
     border-radius: 10px;
     background-color: #fff;
     padding: 30px;
+}
+
+@media screen and (max-width: 800px){
+    #central-element, #storedBookmarks{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #central-element > h3, label.block-element{
+        text-align: left;
+        padding-left: 5%;
+    }
 }
 
 #storedBookmarks{
-    margin: 0 150px 30px 150px;
     border-radius: 10px;
     background-color: #fff;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
 }
 
 .form-control{
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 5px;
-    text-transform: lowercase;
     font-size: 0.7rem;
     border-radius: 3px;
     border: 2px solid #d1fff1;
     text-align: center;
     color: #666;
     width: 30%;
+    height: 3.5em;
 }
 
 #myForm > .button{
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     background-color: #d1fff1;
     color: #666;
     border-radius: 3px;
     border: 2px solid #d1fff1;
-    width: 20%;
+    width: 30%;
     font-size: 0.7rem;
+    height: 3.5em;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
+@media screen and (max-width: 800px){
+    #myForm > .button, .form-control{
+        width: 90%;
+    }
 }
 
 #myForm > .button:hover{
     background-color: #a8dbcb;
     color: #d1fff1;
     border: 2px solid #a8dbcb;
-    width: 20%;
     font-size: 0.7rem;
 }
 
@@ -152,6 +212,12 @@ input:focus {
     outline: none !important;
     border-color: #d1fff1;
     box-shadow: 0 0 15px #d1fff1;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
 }
 textarea:focus { 
     outline: none !important;
@@ -188,8 +254,21 @@ a#btn-delete:hover{
 
 }
 
+@media screen and (max-width: 800px){
+    .stored-buttons a{
+        display: block;
+        width: 60%;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    #storedBookmarks > h3{
+        text-align: left;
+    }
+}
 
-
+label.block-element{
+    margin-bottom: 5px;
+}
 
 
 
